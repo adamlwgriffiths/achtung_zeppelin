@@ -1,4 +1,23 @@
+# Achtung, Zeppelin!
+
 Flight Simulator created as final project for Games Programming uni subject in 2004.
+
+## Controls
+
+S = Throttle Up
+X = Throttle Down
+
+A = Zoom In
+D = Zoom Out
+
+Z = Yaw Left
+C = Yaw Right
+
+V = Toggle Camera
+
+F2 = Restart
+
+## History
 
 Meshes were taken from online resources (lost to time).
 The Zeppelin textures were created by hand.
