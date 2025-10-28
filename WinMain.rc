@@ -1,0 +1,348 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define IDC_STATIC -1
+#include <windows.h>
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN_ICON           ICON                    "DirectX.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define IDC_STATIC -1\r\n"
+    "#include <windows.h>\r\n"
+    "\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAIN_ACCEL ACCELERATORS 
+BEGIN
+    VK_F10,         IDM_CHANGEDEVICE,       VIRTKEY, NOINVERT
+    VK_ESCAPE,      IDM_EXIT,               VIRTKEY, NOINVERT
+    "X",            IDM_EXIT,               VIRTKEY, ALT, NOINVERT
+    VK_F11,         IDM_SINGLESTEP,         VIRTKEY, NOINVERT
+    VK_RETURN,      IDM_TOGGLEFULLSCREEN,   VIRTKEY, ALT, NOINVERT
+    VK_F1,          IDM_TOGGLEHELP,         VIRTKEY, NOINVERT
+    VK_F12,         IDM_TOGGLESTART,        VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SELECTDEVICE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SELECTDEVICE DIALOGEX 0, 0, 289, 302
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Direct3D Settings"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Adapter and device",IDC_STATIC,5,5,276,47
+    LTEXT           "Display &Adapter:",IDC_STATIC,16,17,98,10,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_ADAPTER_COMBO,124,15,149,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Render &Device:",IDC_STATIC,16,34,98,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_DEVICE_COMBO,124,32,149,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Display mode settings",IDC_STATIC,5,56,276,98
+    CONTROL         "&Windowed",IDC_WINDOW,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,16,68,98,15
+    CONTROL         "&Fullscreen",IDC_FULLSCREEN,"Button",BS_AUTORADIOBUTTON,
+                    16,83,98,15
+    LTEXT           "Adapter F&ormat:",IDC_STATIC,16,103,98,8
+    COMBOBOX        IDC_ADAPTERFORMAT_COMBO,124,101,149,204,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "&Resolution:",IDC_STATIC,16,120,98,8
+    COMBOBOX        IDC_RESOLUTION_COMBO,124,118,149,204,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    LTEXT           "R&efresh Rate:",IDC_STATIC,16,137,98,8
+    COMBOBOX        IDC_REFRESHRATE_COMBO,124,135,149,204,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Device settings",IDC_STATIC,7,158,274,118
+    LTEXT           "&Back Buffer Format:",IDC_STATIC,16,173,98,8
+    COMBOBOX        IDC_BACKBUFFERFORMAT_COMBO,124,170,149,100,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "De&pth/Stencil Buffer Format:",IDC_STATIC,16,190,98,8
+    COMBOBOX        IDC_DEPTHSTENCILBUFFERFORMAT_COMBO,124,187,149,100,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Multisample Type:",IDC_STATIC,16,207,98,10,
+                    SS_CENTERIMAGE
+    COMBOBOX        IDC_MULTISAMPLE_COMBO,124,204,149,100,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Multisample &Quality:",IDC_STATIC,16,224,98,8
+    COMBOBOX        IDC_MULTISAMPLE_QUALITY_COMBO,124,221,149,100,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Vertex Processing:",IDC_STATIC,16,241,98,8
+    COMBOBOX        IDC_VERTEXPROCESSING_COMBO,124,238,149,100,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Present &Interval:",IDC_STATIC,16,258,98,8
+    COMBOBOX        IDC_PRESENTINTERVAL_COMBO,124,255,149,100,
+                    CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,86,286,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,152,286,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tF2",                    40018
+        MENUITEM SEPARATOR
+        MENUITEM "&Go/stop\tEnter",             IDM_TOGGLESTART
+        MENUITEM "&Single step\tSpace",         IDM_SINGLESTEP
+        MENUITEM SEPARATOR
+        MENUITEM "&Change device...\tF10",      IDM_CHANGEDEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit\tESC",                  IDM_EXIT
+    END
+    POPUP "Game"
+    BEGIN
+        MENUITEM "Change &View\tV",             ID_GAME_CHANGEVIEW
+    END
+    POPUP "&Settings"
+    BEGIN
+        MENUITEM "&World Creation",             ID_SETTINGS_WORLDCREATION
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Help",                        40022
+        MENUITEM SEPARATOR
+        MENUITEM "&About",                      40016
+    END
+END
+
+IDR_POPUP MENU 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Go/stop",                    IDM_TOGGLESTART
+        MENUITEM "&Single step",                IDM_SINGLESTEP
+        MENUITEM SEPARATOR
+        MENUITEM "&Change device...",           IDM_CHANGEDEVICE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SETTINGS_WORLDCREATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_HELP_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 146
+    END
+
+    IDD_HELP_HELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 277
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGS_WORLDCREATION DIALOGEX 0, 0, 216, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "World Creation Settings"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,159,156,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,156,50,14
+    GROUPBOX        "Terrain Settings",IDC_STATIC,7,62,202,90
+    LTEXT           "Amplitude",IDC_STATIC,27,96,32,8
+    LTEXT           "Height Scale",IDC_STATIC,19,76,40,8
+    EDITTEXT        IDC_HEIGHT_SCALE,66,73,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRACTAL_AMPLITUDE,66,94,40,14,ES_AUTOHSCROLL
+    GROUPBOX        "Flat",IDC_STATIC,116,69,84,62
+    LTEXT           "Width",IDC_STATIC,129,80,20,8
+    LTEXT           "Length",IDC_STATIC,126,98,23,8
+    EDITTEXT        IDC_FLAT_LENGTH,153,94,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FLAT_WIDTH,153,76,40,14,ES_AUTOHSCROLL
+    LTEXT           "Number of Cities",IDC_STATIC,18,23,54,8
+    EDITTEXT        IDC_GAME_NUMCITIES,75,20,40,14,ES_AUTOHSCROLL
+    LTEXT           "Number of Ships",IDC_STATIC,18,41,53,8
+    EDITTEXT        IDC_GAME_NUMSHIPS,75,38,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRACTAL_ROUGHNESS,66,113,40,14,ES_AUTOHSCROLL
+    LTEXT           "Roughness",IDC_STATIC,23,115,36,8
+    LTEXT           "Spacing",IDC_STATIC,124,115,26,8
+    EDITTEXT        IDC_FLAT_SPACING,153,112,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXTURE_SIZE,66,133,40,14,ES_AUTOHSCROLL
+    LTEXT           "Texture Size",IDC_STATIC,18,135,41,8
+    GROUPBOX        "Game Settings",IDC_STATIC,7,7,202,52
+    CONTROL         "Demo Mode",IDC_DEMO_MODE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,133,23,55,10
+END
+
+IDD_HELP_ABOUT DIALOGEX 0, 0, 221, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,133,51,14
+    CTEXT           "Achtung Zeppelin!",IDC_STATIC,7,7,207,12,SS_SUNKEN | 
+                    WS_BORDER
+    CTEXT           "Written by Adam Griffiths, 2004",IDC_STATIC,7,83,207,8
+    CTEXT           "Distributed under the terms of the GPL\n(http://www.gnu.org/licenses/gpl.html)",
+                    IDC_STATIC,7,106,207,18
+    CTEXT           "A 3D Action / Simulation Game\ncreated using Win32 and DirectX\n for Swinburne University.",
+                    IDC_STATIC,7,47,207,27
+END
+
+IDD_HELP_HELP DIALOGEX 0, 0, 284, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Help"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,116,220,50,14
+    CTEXT           "Achtung Zeppelin!",IDC_STATIC,7,7,270,12,SS_SUNKEN | 
+                    WS_BORDER
+    CTEXT           "Achtung Zeppelin is a WW1 Alternate History Flight-Sim",
+                    IDC_STATIC,7,28,270,13
+    CTEXT           "The aim of the game is to destroy the enemy's Zeppelin Carriers before all of your cities or Zeppelins are destroyed.",
+                    IDC_STATIC,35,45,212,19
+    CTEXT           "Flight Controls:\n\nPitch / Roll - Main Arrow Keys / Mouse\nYaw - Z / C\nThrottle Up / Down - S / X\nFire - Space / Mouse Button 1",
+                    IDC_STATIC,30,145,130,70,WS_BORDER
+    CTEXT           "Camera Controls:\n\nToggle Camera Mode - V\nNext Camera - B",
+                    IDC_STATIC,164,145,88,36,WS_BORDER
+    CTEXT           "Misc. Controls:\n\nExtra HUD Info - W",IDC_STATIC,164,
+                    186,88,29,WS_BORDER
+    CTEXT           "You can start a new game with the F2 key or by accessing the `New' menu item in the `File' menu.",
+                    IDC_STATIC,30,84,222,20
+    CTEXT           "The World / Game settings can be changed via the `World Creation' dialog.",
+                    IDC_STATIC,20,105,246,11
+    CTEXT           "For more information, please read the README file.",
+                    IDC_STATIC,30,123,221,11,SS_SUNKEN
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
